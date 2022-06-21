@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Card from './components/Card/Card';
+import { ICard } from './interfaces/card.interface';
 
 import styles from './App.module.css';
 
@@ -22,18 +24,8 @@ const App = (): JSX.Element => {
 			);
 	}, []);
 
-	interface ICard {
-		id: number;
-		name: string;
-		price: string;
-	}
-
-	const listItems = cards.map((item: ICard) => {
-		return (
-			<li key={item.id}>
-				{item.name} {item.price}
-			</li>
-		);
+	const listCards = cards.map((card: ICard) => {
+		return <Card key={card.id} {...card} />;
 	});
 
 	if (error) {
@@ -43,7 +35,7 @@ const App = (): JSX.Element => {
 	} else {
 		return (
 			<div className={styles.app}>
-				<ul>{listItems}</ul>
+				<div className={styles.list}>{listCards}</div>
 			</div>
 		);
 	}

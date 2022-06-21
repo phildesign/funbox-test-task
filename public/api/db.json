@@ -1,0 +1,31 @@
+{
+	"cards": [
+		{
+			"slogan": "Сказочное заморское яство",
+			"name": "Нямушка",
+			"second_name": "с фуа-гра",
+			"number_of_servings": 10,
+			"number_of_gifts": 1,
+			"weight": 0.5,
+			"img": "./cat.png"
+		},
+		{
+			"slogan": "Сказочное заморское яство",
+			"name": "Нямушка",
+			"second_name": "с рыбой",
+			"number_of_servings": 40,
+			"number_of_gifts": 2,
+			"weight": 2,
+			"img": "./cat.png"
+		},
+		{
+			"slogan": "Сказочное заморское яство",
+			"name": "Нямушка",
+			"second_name": "с курой",
+			"number_of_servings": 100,
+			"number_of_gifts": 5,
+			"weight": 5,
+			"img": "./cat.png"
+		}
+	]
+}
